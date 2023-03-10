@@ -1,0 +1,146 @@
+
+
+
+#chanchito0{
+    position: relative;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  word-spacing: 555cm;;
+
+
+}
+
+   #chanchitogrande1 {
+    
+        word-spacing: 555cm;;
+    } 
+    
+
+ #saludodeinicio{
+  position: relative;
+  display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: flex-start;
+align-items: flex-start;
+align-content: stretch;
+top: -3cm;
+left: 0.5cm;
+ }
+
+
+
+ /* crea tus tickets :) */
+ #CREATUTIKECT{
+      top: -6cm;
+        border: 2px rgb(27, 91, 211) ;
+        color: rgb(231, 12, 12);
+        text-align: center;
+        padding: 10px;
+    
+ }
+
+
+
+ CREW  {
+  font-family: sans-serif;
+  background-color: #81fab3;
+  font-weight: bold;
+}
+
+.text-box {
+  
+    position: relative;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  top: -5cm;
+  left: 10cm;
+   
+  
+}
+
+
+
+
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: absolute;
+}
+
+
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgb(207, 253, 255);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #0c4734;
+  color: #020607;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn-white::after {
+  background-color: #ffb5b5;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 20s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+#tabla{
+  left: cm;
+  color: #81a1fa;
+  
+}
+

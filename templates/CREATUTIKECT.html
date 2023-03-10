@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{{ url_for('static', filename= 'css/style.css') }}">
+
+    <title>Document</title>
+</head>
+<body >
+    
+    <Div  ><a id="chanchitogrande1" href="{{ url_for('main.profile') }}" class="button">
+        Inicio</a>
+        </Div>
+
+
+    <h1 id="tabla">Tickets</h1>
+    <H1>DESCRIBE TU PROBLEMA:</H1>
+<BR></BR>
+<TExtarea></TExtarea>
+{% block content %}
+<h2 >{% block title %}{% endblock %}</h2> 
+<table>
+    <H3> Tickets SOLICITADOS</H3>
+
+    <tr>
+        <th>Nombre Del Admin &#160;&#160;&#160; </th>
+        <hr>
+        <th>Asunto   &#160; &#160; &#160; &#16550; &#160; </th>
+        <th>fecha</th>     
+    </tr>
+    {% for post in posts %}
+        <tr> 
+            <td>{{ post['nombre']}}</td>
+            <td>{{ post['asunto']}}</td>
+            <td>{{ post['fecha']}}</td>
+        </tr>
+
+        {% endfor %}
+</table>
+{% endblock %}
+<BR></BR>
+
+</body>
+</html>
+

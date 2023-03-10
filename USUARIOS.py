@@ -1,0 +1,10 @@
+import sqlite3
+conn = sqlite3.connect("PERFIL EMPRESA SA.sqlite")
+c = conn.cursor()
+c.execute("INSERT INTO datosest (nombre,asunto,fecha) VALUES ('ANDRES MACIAS','REPARACION DE IMPRESORA','5/1/23')")
+c.execute("INSERT INTO datosest (nombre,asunto,fecha) VALUES ('JAVIER MACIAS','REPARACION DE PC','25/2/23')")
+c.execute("INSERT INTO datosest (nombre,asunto,fecha) VALUES ('MOTENEGRO MACIAS','REPARACION DE REDES','2/3/23')")
+c.execute("INSERT INTO datosest (nombre,asunto,fecha) VALUES ('OCHOA MACIAS','SOLICITUD DE COMPRAS','26/1/23')")
+c.execute("INSERT INTO datosest (nombre,asunto,fecha) VALUES ('DAYANA MACIAS','REPARACION DE SISTEMA','28/1/23')")
+conn.commit()
+conn.close()

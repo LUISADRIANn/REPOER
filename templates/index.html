@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>Document</title>
+</head>
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+    
+<img  src="https://www.uacj.mx/images/Bibliotecas/formacion_usuarios/Cursos%20Form%20Usuarios%20Icono.png ">
+
+<h1 id = "clan" class="title" > Luis</h1>
+<h1  class="title">
+    Somos una empresa de implementación queremos  un Server; diseñar y optimizar la infraestructura de TI, como el almacenamiento, las redes y los recursos en la nube; creación y gestión de procesos tales como soporte técnico y procedimientos de resolución</h1>
+
+<Div ><a id="char" href="{{ url_for('main.profile') }}" class ="button" >
+    Inicio</a>
+    </Div>
+
+
+{% endblock %}
+
+
+
+
+---------------Folder prject name
+               ├── __init__.py # setup your app
+               ├── main.py   # the non-auth routes for your app
+               ├── auth.py   # the auth routes for your app
+               ├── models.py # your user model
+               ├── db.sqlite # your database
+               └── templates
+                    ├── base.html     # contains common layout and links
+                    ├── index.html    # show the home page
+                    ├── login.html    # show the login form
+                    ├── profile.html  # show the profile page
+                    └── signup.html   # show the signup form
+                </body>
+                </html>
